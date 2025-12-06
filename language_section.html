@@ -1,4 +1,6 @@
 <!-- Language Learning Section - Add this to your index.html -->
+<html lang="en">
+
 <head>
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="https://unpkg.com/cal-heatmap/dist/cal-heatmap.min.js"></script>
@@ -71,8 +73,7 @@ async function loadAnkiData() {
             itemSelector: '#cal-heatmap',
             domain: {
                 type: 'year',
-                gutter: 4,
-                label: { text: 'MMM', textAlign: 'start', position: 'top' }
+                label: { text: null},
             },
             subDomain: { type: 'day', radius: 2, width: 11, height: 11, gutter: 4 },
             data: {
@@ -81,13 +82,13 @@ async function loadAnkiData() {
                 x: 'date',
                 y: d => +d[1]
             },
-            date: { start: new Date(Object.keys(ankiData.data)[0]) },
-            range: 6, // Show 6 months
+            date: { start: new Date('2025-01-01') },
+            range: 1,
             scale: {
                 color: {
                     type: 'linear',
                     scheme: 'PRGn',
-                    domain: [0, ankiData.max_reviews]
+                    domain: [0, 40]
                 }
             },
             theme: 'light'
@@ -102,7 +103,7 @@ async function loadAnkiData() {
                 },
             },
         ]
-        render(<div id="cal-heatmap"></div>);
+        <!-- render(<div id="cal-heatmap"></div>)-->
         
     } catch (error) {
         console.error('Error loading Anki data:', error);
@@ -114,3 +115,4 @@ async function loadAnkiData() {
 // Load data when page loads
 window.addEventListener('DOMContentLoaded', loadAnkiData);
 </script>
+</html>
