@@ -76,7 +76,7 @@ async function loadAnkiData() {
             },
             subDomain: { type: 'day', radius: 2, width: 11, height: 11, gutter: 4 },
             data: {
-                source: ankiData.data,
+                source: './data/anki_data.json',
                 type: 'json',
                 x: 'date',
                 y: d => +d[1]
