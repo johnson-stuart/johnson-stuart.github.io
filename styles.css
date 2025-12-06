@@ -1,0 +1,108 @@
+/* Resume Section Styling - Add this to your styles.css */
+
+/* Download Button */
+.download-cv {
+    text-align: center;
+    margin: 20px 0 30px 0;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #0052a3;
+}
+
+/* Resume Content Container */
+.resume-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Resume Sections */
+.resume-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.resume-section h3 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 8px;
+}
+
+/* Job Entries */
+.job {
+    margin-bottom: 20px;
+}
+
+.job:last-child {
+    margin-bottom: 0;
+}
+
+.job h4 {
+    color: #0066cc;
+    margin: 0 0 5px 0;
+}
+
+.company-date {
+    color: #666;
+    font-style: italic;
+    margin: 0 0 10px 0;
+}
+
+.job ul {
+    margin: 10px 0 0 20px;
+    padding: 0;
+}
+
+.job ul li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #e6f2ff;
+    color: #0066cc;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resume-content {
+        padding: 10px;
+    }
+    
+    .resume-section {
+        padding: 15px;
+    }
+    
+    .download-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
