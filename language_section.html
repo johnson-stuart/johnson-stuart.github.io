@@ -37,7 +37,7 @@
 // Load and display Anki data
 async function loadAnkiData() {
     try {
-        const response = await fetch('data/anki-data.json');
+        const response = await fetch('data/anki_data.json');
         const ankiData = await response.json();
         
         // Update statistics
