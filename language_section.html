@@ -92,6 +92,7 @@ async function loadAnkiData() {
             },
             theme: 'light'
         });
+        render(<div id="cal-heatmap"></div>);
         
     } catch (error) {
         console.error('Error loading Anki data:', error);
