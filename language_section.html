@@ -70,7 +70,7 @@ async function loadAnkiData() {
         cal.paint({
             itemSelector: '#cal-heatmap',
             domain: {
-                type: 'month',
+                type: 'year',
                 gutter: 4,
                 label: { text: 'MMM', textAlign: 'start', position: 'top' }
             },
@@ -78,20 +78,30 @@ async function loadAnkiData() {
             data: {
                 source: ankiData.data,
                 type: 'json',
-                x: d => d[0],
+                x: 'date',
                 y: d => +d[1]
             },
             date: { start: new Date(Object.keys(ankiData.data)[0]) },
             range: 6, // Show 6 months
             scale: {
                 color: {
-                    type: 'threshold',
-                    range: ['#ebedf0', '#9be9a8', '#40c463', '#30a14e', '#216e39'],
-                    domain: [1, 10, 20, 30]
+                    type: 'linear',
+                    scheme: 'PRGn',
+                    domain: [0, ankiData.max_reviews]
                 }
             },
             theme: 'light'
         });
+        [
+            Tooltip,
+            {
+                text: function (date, value, dayjsDate) {
+                return (
+                    (value ? value + '°C' : 'No data') + ' on ' + dayjsDate.format('LL')
+                );
+                },
+            },
+        ]
         render(<div id="cal-heatmap"></div>);
         
     } catch (error) {
