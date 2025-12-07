@@ -10,6 +10,12 @@ My personal portfolio website showcasing my professional experience and personal
 
 This site serves as my professional portfolio and a space to document my learning journey in web development, game development, and data science.
 
+## Resources
+
+I'm learning responsive web design on Freecodecamp.org - https://www.freecodecamp.org/learn/responsive-web-design-v9/
+
+My AI teacher and helper is Claude - https://claude.ai/
+
 ## Tech Stack
 
 - HTML5
@@ -50,12 +56,6 @@ This project helps me practice:
 - Git/GitHub workflow
 - Python (export Anki data for heatmap viz)
 - UI/UX principles
-
-## Resources
-
-I'm learning responsive web design on Freecodecamp.org - https://www.freecodecamp.org/learn/responsive-web-design-v9/
-
-My AI teacher/helper is Claude - https://claude.ai/
 
 ## Contact
 
