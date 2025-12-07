@@ -20,7 +20,7 @@ This site serves as my professional portfolio and a space to document my learnin
 
 ## Features
 
-- 📄 **Interactive Resume** - Professional experience and skills
+- 📄 **Resume** - Professional experience and skills
 - 📚 **Language Learning** - Real-time visualization of my Mandarin study progress using Anki data and learning flow
 - 📧 **Contact Form** - Get in touch with me
 - *(More sections coming soon - see Roadmap below)*
