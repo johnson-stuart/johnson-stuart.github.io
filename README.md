@@ -21,13 +21,13 @@ This site serves as my professional portfolio and a space to document my learnin
 ## Features
 
 - 📄 **Interactive Resume** - Professional experience and skills
-- 📚 **Language Learning Tracker** - Real-time visualization of my Mandarin study progress using Anki data
+- 📚 **Language Learning** - Real-time visualization of my Mandarin study progress using Anki data and learning flow
 - 📧 **Contact Form** - Get in touch with me
 - *(More sections coming soon - see Roadmap below)*
 
 ## Roadmap
 
-- [ ] Photo gallery from travels and adventures
+- [ ] Photo gallery
 - [ ] Expanded language learning workflow guide
 - [ ] Recipe collection of favourite home-cooked meals
 - [ ] Game development blog
@@ -42,19 +42,18 @@ git clone https://github.com/johnson-stuart/johnson-stuart.github.io.git
 
 2. Open `index.html` in your browser
 
-That's it! It's a static site, so no build process needed.
-
 ## Learning Goals
 
 This project helps me practice:
 - Responsive web design
-- Vanilla JavaScript
+- JavaScript
 - Git/GitHub workflow
+- Python (extract Anki data for heatmap viz)
 - UI/UX principles
 
 ## Contact
 
-Feel free to reach out through the contact form on the website or connect with me on [LinkedIn](your-linkedin-url).
+Feel free to reach out through the contact form on the website or connect with me on [LinkedIn](linked.com/johnson-stuart).
 
 ---
 
