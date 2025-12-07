@@ -8,13 +8,15 @@ My personal portfolio website showcasing my professional experience and personal
 
 ## About
 
-This site serves as my professional portfolio and a space to document my learning journey in web development, game development, and data science.
+This site serves as my professional portfolio and a space to document my learning journey in web development and for sharing hobbies.
 
 ## Resources
 
 I'm learning responsive web design on Freecodecamp.org - https://www.freecodecamp.org/learn/responsive-web-design-v9/
 
 My AI teacher and helper is Claude - https://claude.ai/
+
+I'm using Formspree for my contact form - https://formspree.io/
 
 ## Tech Stack
 
@@ -28,7 +30,7 @@ My AI teacher and helper is Claude - https://claude.ai/
 
 - 📄 **Resume** - Professional experience and skills
 - 📚 **Language Learning** - Real-time visualization of my Mandarin study progress using Anki data
-- 📧 **Contact Form** - Get in touch with me
+- 📧 **Contact Form** - Secure contact form hosted by Formspree.
 - *(More sections coming soon - see Roadmap below)*
 
 ## Roadmap
@@ -56,6 +58,7 @@ This project helps me practice:
 - Git/GitHub workflow
 - Python (export Anki data for heatmap viz)
 - UI/UX principles
+- Secure web development principles
 
 ## Contact
 
