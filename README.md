@@ -55,7 +55,7 @@ This project helps me practice:
 
 I'm learning responsive web design on Freecodecamp.org - https://www.freecodecamp.org/learn/responsive-web-design-v9/
 
-Claude - https://claude.ai/
+My AI teacher/helper is Claude - https://claude.ai/
 
 ## Contact
 
