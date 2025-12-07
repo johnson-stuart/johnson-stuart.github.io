@@ -51,6 +51,12 @@ This project helps me practice:
 - Python (extract Anki data for heatmap viz)
 - UI/UX principles
 
+## Resources
+
+I'm learning responsive web design on Freecodecamp.org - https://www.freecodecamp.org/learn/responsive-web-design-v9/
+
+Claude - https://claude.ai/
+
 ## Contact
 
 Feel free to reach out through the contact form on the website or connect with me on [LinkedIn](linked.com/johnson-stuart).
