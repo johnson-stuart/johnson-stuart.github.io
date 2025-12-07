@@ -14,7 +14,7 @@ This site serves as my professional portfolio and a space to document my learnin
 
 I'm learning responsive web design on Freecodecamp.org - https://www.freecodecamp.org/learn/responsive-web-design-v9/
 
-My AI teacher and helper is Claude - https://claude.ai/
+Claude - https://claude.ai/
 
 I'm using Formspree for my contact form - https://formspree.io/
 

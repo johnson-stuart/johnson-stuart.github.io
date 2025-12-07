@@ -1,118 +1,26 @@
 <!-- Language Learning Section - Add this to your index.html -->
 <html lang="en">
 
-<head>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="https://unpkg.com/cal-heatmap/dist/cal-heatmap.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/cal-heatmap/dist/cal-heatmap.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Stuart Johnson's Language Learning Section.">
+        <meta content="Stuart Johnson" property="og:title"/>
+        <meta content="website" property="og:type"/>
+        <meta content="johnson-stuart.github.io/language_section.html" property="og:url"/>
+        <title>Language Learning - Stuart Johnson</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
 
+    <nav class="navbar" id="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="language_section.html">Language Learning</a></li>
+        </ul>   
+    </nav>
 
-<h2 id="language-learning">Language Learning</h2>
+    <body>
+        <h2 id="language-learning">Language Learning</h2>
+    </body>
 
-<div class="language-content">
-    <p>I'm currently learning <strong>Mandarin Chinese</strong> (普通话) and tracking my progress through daily Anki flashcard reviews. Below is my study consistency over time:</p>
-    
-    <div class="anki-stats">
-        <div id="stats-summary" class="stats-box">
-            <p>Loading statistics...</p>
-        </div>
-    </div>
-    
-    <div id="cal-heatmap" class="heatmap-container"></div>
-    
-    <div class="heatmap-legend">
-        <span>Less</span>
-        <div class="legend-scale">
-            <span class="legend-box level-0"></span>
-            <span class="legend-box level-1"></span>
-            <span class="legend-box level-2"></span>
-            <span class="legend-box level-3"></span>
-            <span class="legend-box level-4"></span>
-        </div>
-        <span>More</span>
-    </div>
-    
-    <p class="last-updated" id="last-updated">Last updated: --</p>
-</div>
-
-<script>
-// Load and display Anki data
-async function loadAnkiData() {
-    try {
-        const response = await fetch('./data/anki_data.json');
-        const ankiData = await response.json();
-        
-        // Update statistics
-        const statsDiv = document.getElementById('stats-summary');
-        const avgReviews = (ankiData.total_reviews / ankiData.total_days).toFixed(1);
-        
-        statsDiv.innerHTML = `
-            <div class="stat-item">
-                <div class="stat-number">${ankiData.total_reviews.toLocaleString()}</div>
-                <div class="stat-label">Total Reviews</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">${ankiData.total_days}</div>
-                <div class="stat-label">Days Studied</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">${avgReviews}</div>
-                <div class="stat-label">Avg per Day</div>
-            </div>
-        `;
-        
-        // Update last updated date
-        const lastUpdated = new Date(ankiData.updated);
-        document.getElementById('last-updated').textContent = 
-            `Last updated: ${lastUpdated.toLocaleDateString('en-GB')}`;
-        
-        // Create heatmap
-        const cal = new CalHeatmap();
-        cal.paint({
-            itemSelector: '#cal-heatmap',
-            domain: {
-                type: 'year',
-                label: { text: null},
-            },
-            subDomain: { type: 'day', radius: 2, width: 11, height: 11, gutter: 4 },
-            data: {
-                source: './data/anki_data.json',
-                type: 'json',
-                x: 'date',
-                y: d => +d[1]
-            },
-            date: { start: new Date('2025-01-01') },
-            range: 1,
-            scale: {
-                color: {
-                    type: 'linear',
-                    scheme: 'PRGn',
-                    domain: [0, 40]
-                }
-            },
-            theme: 'light'
-        });
-        [
-            Tooltip,
-            {
-                text: function (date, value, dayjsDate) {
-                return (
-                    (value ? value + '°C' : 'No data') + ' on ' + dayjsDate.format('LL')
-                );
-                },
-            },
-        ]
-        <!-- render(<div id="cal-heatmap"></div>)-->
-        
-    } catch (error) {
-        console.error('Error loading Anki data:', error);
-        document.getElementById('stats-summary').innerHTML = 
-            '<p style="color: red;">Error loading Anki data. Make sure anki-data.json is in the data folder.</p>';
-    }
-}
-
-// Load data when page loads
-window.addEventListener('DOMContentLoaded', loadAnkiData);
-</script>
 </html>
