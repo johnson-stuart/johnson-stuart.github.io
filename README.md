@@ -21,14 +21,14 @@ This site serves as my professional portfolio and a space to document my learnin
 ## Features
 
 - 📄 **Resume** - Professional experience and skills
-- 📚 **Language Learning** - Real-time visualization of my Mandarin study progress using Anki data and learning flow
+- 📚 **Language Learning** - Real-time visualization of my Mandarin study progress using Anki data
 - 📧 **Contact Form** - Get in touch with me
 - *(More sections coming soon - see Roadmap below)*
 
 ## Roadmap
 
 - [ ] Photo gallery
-- [ ] Expanded language learning workflow guide
+- [ ] Expanded language learning page with AI assisted workflow and learning progress towards fluency
 - [ ] Recipe collection of favourite home-cooked meals
 - [ ] Game development blog
 - [ ] Enhanced landing page with navigation
@@ -48,7 +48,7 @@ This project helps me practice:
 - Responsive web design
 - JavaScript
 - Git/GitHub workflow
-- Python (extract Anki data for heatmap viz)
+- Python (export Anki data for heatmap viz)
 - UI/UX principles
 
 ## Resources
