@@ -16,7 +16,7 @@ I'm learning responsive web design on Freecodecamp.org - https://www.freecodecam
 
 Claude - https://claude.ai/
 
-I'm using Formspree for my contact form - https://formspree.io/
+Formspree for my contact form - https://formspree.io/
 
 ## Tech Stack
 
