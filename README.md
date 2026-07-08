@@ -29,13 +29,14 @@ Formspree for my contact form - https://formspree.io/
 ## Features
 
 - 📄 **Resume** - Professional experience and skills
-- 📚 **Language Learning** - Real-time visualization of my Mandarin study progress using Anki data
 - 📧 **Contact Form** - Secure contact form hosted by Formspree.
 - *(More sections coming soon - see Roadmap below)*
 
 ## Roadmap
 
 - [ ] Photo gallery
+- [ ] Projects
+- [ ] Blog
 - [ ] Expanded language learning page with AI assisted workflow and learning progress towards fluency
 - [ ] Recipe collection of favourite home-cooked meals
 - [ ] Game development blog
@@ -66,4 +67,4 @@ Feel free to reach out through the contact form on the website or connect with m
 
 ---
 
-*Last updated: December 2025*
+*Last updated: July 2026*
