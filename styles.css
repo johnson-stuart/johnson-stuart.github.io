@@ -44,3 +44,12 @@ body {
   width:1000px;
   margin:auto;
 }
+
+.resume-section {
+  margin: auto;
+  text-align: center;
+}
+
+.contact-section {
+  margin:auto;
+}
