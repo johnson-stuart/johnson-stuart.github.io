@@ -13,8 +13,9 @@ body {
 }
 
 .nav-links {
+  width:1000px;
+  margin:auto;
   list-style-type: none;  
-  margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #912828;
@@ -51,5 +52,16 @@ body {
 }
 
 .contact-section {
+  width:1000px;
+  margin:auto;
+}
+
+.social-media-section {
+  width:1000px;
+  margin:auto;
+}
+
+.footer {
+  width:1000px;
   margin:auto;
 }

@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
-
+    <!-- Navigation bar at the top of page-->
     <body>
         <nav class="navbar" id="navbar">
                 <ul class="nav-links">
@@ -25,9 +25,12 @@
                 </ul>   
         </nav> 
 
+        <!-- Section for short description about me and a link to CV -->
         <div class="about-section">
             <h2> About</h2>
-            <img src="images/profilephoto.jpg" alt="Profile photo" width="100"/>
+
+            <img src="images/profilephoto.jpg" alt="Profile photo" width="150"/>
+
             <p> Business Operations Analyst, creating and monitoring KPI's and developing analytical tools and reporting infrastructure that connect data to decision-making at senior level. My current focus is on profitability, workforce utilisation, and sales pipeline. </p>    
             
             <div class="resume-section">
@@ -36,30 +39,35 @@
                             <a href="files/Stuart_Johnson_CV.pdf" download  class="download-btn" target="_blank">📄 My CV</a>
                             </p>    
             </div>
-        
-            <div class="contact-section">
-                <h2> Contact Me </h2>
-                    <form action="https://formspree.io/f/mrbnlvad" method="post">
-                        <label for="name">Name:</label><br>
-                        <input type="text" id="name" name="name" ><br>
-                        <label for="email">Email:</label><br>
-                        <input required type="email" id="email" name="email"><br>
-                        <label for="message">Message:</label><br>
-                        <textarea id="message" name="message"></textarea><br>
-                        <input type="submit" value="Submit">
-                    </form>
-            </div>
-            <div class="social-media-section">
-                    <h2> Social Media </h2>
-                    <ul>
-                    <li><a href="https://www.linkedin.com/in/johnson-stuart/" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://github.com/johnson-stuart" target="_blank">Github</a> </li>
-                    </ul>
-            </div>
+
         </div>
+        
+        <!-- Section for contact form -->
+        <div class="contact-section">
+            <h2> Contact Me </h2>
+                <form action="https://formspree.io/f/mrbnlvad" method="post">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" ><br>
+                    <label for="email">Email:</label><br>
+                    <input required type="email" id="email" name="email"><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message"></textarea><br>
+                    <input type="submit" value="Submit">
+                </form>
+        </div>
+
+        <!-- Section for Social Media links-->
+        <div class="social-media-section">
+                <h2> Social Media </h2>
+                <ul>
+                <li><a href="https://www.linkedin.com/in/johnson-stuart/"   target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/johnson-stuart" target="_blank">Github</a> </li>
+                </ul>
+        </div>
+
     </body>
 
-    <footer>
+    <footer class="footer">
         <p>© 2025 Stuart Johnson. All rights reserved.</p>
     </footer>
 </html>
