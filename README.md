@@ -34,13 +34,12 @@ Formspree for my contact form - https://formspree.io/
 
 ## Roadmap
 
-- [ ] Photo gallery
 - [ ] Projects
 - [ ] Blog
-- [ ] Expanded language learning page with AI assisted workflow and learning progress towards fluency
-- [ ] Recipe collection of favourite home-cooked meals
 - [ ] Game development blog
 - [ ] Enhanced landing page with navigation
+- [ ] Photo gallery
+- [ ] Expanded language learning page with AI assisted workflow and learning progress towards fluency
 
 ## Local Development
 
