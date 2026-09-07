@@ -34,12 +34,9 @@ Formspree for my contact form - https://formspree.io/
 
 ## Roadmap
 
-- [ ] Projects
-- [ ] Blog
-- [ ] Game development blog
-- [ ] Enhanced landing page with navigation
-- [ ] Photo gallery
-- [ ] Expanded language learning page with AI assisted workflow and learning progress towards fluency
+- [ ] Projects section on homepage
+- [ ] Blog section on homepage
+- [ ] Photo gallery page
 
 ## Local Development
 
@@ -56,7 +53,7 @@ This project helps me practice:
 - Responsive web design
 - JavaScript
 - Git/GitHub workflow
-- Python (export Anki data for heatmap viz)
+- Python
 - UI/UX principles
 - Secure web development principles
 
@@ -66,4 +63,4 @@ Feel free to reach out through the contact form on the website or connect with m
 
 ---
 
-*Last updated: July 2026*
+*Last updated: September 2026*
