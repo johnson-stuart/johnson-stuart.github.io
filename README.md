@@ -26,30 +26,6 @@ Formspree for my contact form - https://formspree.io/
 - Python
 - GitHub Pages (hosting)
 
-## Features
-
-- 📄 **Resume** - Professional experience and skills
-- 📧 **Contact Form** - Secure contact form hosted by Formspree.
-- *(More sections coming soon - see Roadmap below)*
-
-## Roadmap
-
-- [ ] Projects
-- [ ] Blog
-- [ ] Game development blog
-- [ ] Enhanced landing page with navigation
-- [ ] Photo gallery
-- [ ] Expanded language learning page with AI assisted workflow and learning progress towards fluency
-
-## Local Development
-
-1. Clone this repository
-```bash
-git clone https://github.com/johnson-stuart/johnson-stuart.github.io.git
-```
-
-2. Open `index.html` in your browser
-
 ## Learning Goals
 
 This project helps me practice:
