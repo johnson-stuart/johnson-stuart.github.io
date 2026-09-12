@@ -15,82 +15,50 @@
 
     <!-- Navigation bar at the top of page-->
     <body>
+        <!--
         <nav class="navbar" id="navbar">
                 <ul class="nav-links">
                     <li><a href="index.html" class="active">Stuart Johnson</a></li>
-                    <!-- <li><a href="project_section.html">Projects</a></li> -->
-                    <!-- <li><a href="consulting.html">Consulting</a></li> -->
+                    <li><a href="project_section.html">Projects</a></li>
+                    <li><a href="consulting.html">Consulting</a></li>
                     <li><a href="blog_section.html">Blog</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                 </ul>   
         </nav> 
+        -->
 
         <!-- Section for short description about me and a link to CV -->
         <div class="about-section">
-            <h3> About</h3>
-
-            <img src="images/profilephoto.jpg" alt="Profile photo" width="150"/>
-
-            <p> Senior operations analyst, specialising in business intelligence, with 5+ years driving performance across a 500+ headcount global IT services division. Develops analytical tools and reporting infrastructure that connect data to decision-making at senior level, with experience analysing project finances, workforce planning, sales pipeline and recruitment. Experienced with Power BI, Tableau, SQL, Codex and Excel, and advises teams across the UK as an SME on BI tools and Reporting. Holds an integrated Master’s in Physics (MPhys). </p>    
+            <img src="images/profilephoto.jpg" alt="Profile photo" width="150" class="profile-image"/>
+            <h3> Stuart Johnson </h3>
+            <p> Helping businesses turn data into decisions - dashboards, analysis, forecasting.</p>    
             
             <div class="resume-section">
                 <!--Button or link to download Resume-->
-                            <p class="download-cv">
-                            <a href="files/Stuart_Johnson_CV.pdf" download  class="download-btn" target="_blank">📄 My CV</a>
-                            </p>    
+                <p>
+                            <a href="files/Stuart_Johnson_CV.pdf" download  class="download-btn" target="_blank">
+                            <i class="fa fa-download" aria-hidden="true"></i>CV</a>
+                </p>
             </div>
 
         </div>
 
-        <!-- Section for Portfolio-->
-    
-
-        <!-- Certifications section-->
-        <!-- <div class="certifications-section">
-            <h3>Certifications</h3>
-            <ul>
-            </ul>
-        </div> -->
-
-        <!-- Section for Timeline-->
-        <div class="timeline-section">
-            <h3>Timeline</h3>
-            <ul>
-                <li><strong>Senior Business Operations Analyst</strong> - CGI (2024 - Present)</li>
-                <li><strong>Business Operations Analyst</strong> - CGI (2023 - 2024)</li>
-                <li><strong>Project Management Office Analyst</strong> - CGI (2022 - 2023)</li>
-                <li><strong>Test Analyst</strong> - CGI (2021 - 2022)</li>
-            </ul>
-        </div>
-
-        <!-- Section for Education-->
-        <div class="education-section">
-            <h3>Education</h3>
-            <ul>
-                <li><strong>Master of Physics (MPhys)</strong> - University of Edinburgh (2014 - 2020)</li>
-            </ul>
-
         <!-- Section for contact form -->
         <div class="contact-section">
-            <h3> Contact Me </h3>
-                <form action="https://formspree.io/f/mrbnlvad" method="post">
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" ><br>
-                    <label for="email">Email:</label><br>
-                    <input required type="email" id="email" name="email"><br>
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message"></textarea><br>
+            <h3> Let's talk </h3>
+            <p class="contact-sub">Want dashboards, analysis, or forecasting for your business? Get in touch.</p>
+                <form action="https://formspree.io/f/mrbnlvad" method="post" class="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Name">
+                    <input required type="email" id="email" name="email" placeholder="Email">
+                    <textarea id="message" name="message" rows="4" placeholder="Message"></textarea>
                     <input type="submit" value="Submit">
                 </form>
         </div>
 
         <!-- Section for Social Media links-->
         <div class="social-media-section">
-                <h3> Social Media </h3>
                 <ul>
                 <li><a href="https://www.linkedin.com/in/johnson-stuart/"   target="_blank">LinkedIn</a></li>
-                <li><a href="https://github.com/johnson-stuart" target="_blank">Github</a> </li>
-                <li><a href="https://www.instagram.com/stu.jnsn/" target="_blank">Instagram</a></li>
                 </ul>
         </div>
 

@@ -4,7 +4,7 @@
 }
 
 body {
-  margin: 0;
+  margin: auto;
   padding: 0;
 }
 
@@ -41,20 +41,105 @@ body {
   background-color: #370909;
 }
 
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 50px
+}
+
 .about-section {
   width:1000px;
   margin:auto;
-}
-
-.resume-section {
-  margin: auto;
   text-align: center;
 }
 
-.contact-section {
-  width:1000px;
-  margin:auto;
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #0b0b0b;
+    color: #fcfcfb;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
 }
+
+.download-btn:hover {
+    opacity: 0.9;
+}
+
+.contact-section {
+   max-width: 480px;
+    padding: 24px;
+    border: 0.5px solid #e1e0d9;
+    border-radius: 12px;
+    background: #fcfcfb;
+    margin: auto;
+}
+
+.contact-section h3 {
+    margin: 0 0 16px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #0b0b0b;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contact-form label {
+    font-size: 13px;
+    color: #52514e;
+    margin-top: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px 12px;
+    border: 0.5px solid #e1e0d9;
+    border-radius: 8px;
+    background: #fcfcfb;
+    color: #0b0b0b;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #898781;
+}
+
+.contact-form input[type="submit"] {
+    margin-top: 16px;
+    background: #0b0b0b;
+    color: #fcfcfb;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    opacity: 0.9;
+}
+
 
 .social-media-section {
   width:1000px;
@@ -62,26 +147,6 @@ body {
 }
 
 .footer {
-  width:1000px;
-  margin:auto;
-}
-
-.skills-section {
-  width:1000px;
-  margin:auto;
-}
-
-.timeline-section {
-  width:1000px;
-  margin:auto;
-}
-
-.certifications-section {
-  width:1000px;
-  margin:auto;
-}
-
-.education-section {
   width:1000px;
   margin:auto;
 }
