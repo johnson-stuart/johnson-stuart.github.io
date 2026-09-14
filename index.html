@@ -43,6 +43,115 @@
 
         </div>
 
+        <!--Dashboard section -->
+        <div class="service-section">
+            <div class="service-eyebrow">01 · Dashboard Development</div>
+            <h2 class="service-heading">Business ready dashboards in weeks, turning your data into meaningful dashboards or reports</h2>
+
+            <div class="service-process">   
+                <div><strong>1.</strong> Capture requirements, inspect and validate data and definitions, define access and refresh governance</div>
+                <div><strong>2.</strong> Understand the core issue that the dashboard needs to solve, scope and design the dashboard</div>
+                <div><strong>3.</strong> Test, refine, publish.</div>
+            </div>
+
+            <div class="dashboard-frame">
+                <div class="dash-title-bar">
+                    <div class="dash-title">Recruitment — Open Roles</div>
+                </div>
+
+            <div class="dash-tiles">
+                <div class="dash-tile">
+                    <div class="dash-tile-value">42</div>
+                    <div class="dash-tile-label">Open requisitions</div>
+                </div>
+                <div class="dash-tile">
+                    <div class="dash-tile-value">17</div>
+                    <div class="dash-tile-label">Vacancies Remaining</div>
+                </div>
+                <div class="dash-tile">
+                    <div class="dash-tile-value">63</div>
+                    <div class="dash-tile-label">CV Review</div>
+                    <div class="dash-tile-sub">Avg Days in Stage: 4.2</div>
+                </div>
+                <div class="dash-tile">
+                    <div class="dash-tile-value">29</div>
+                    <div class="dash-tile-label">Interviews Scheduled</div>
+                    <div class="dash-tile-sub">Avg Days in Stage: 6.1</div>
+                </div>
+                <div class="dash-tile">
+                    <div class="dash-tile-value">11</div>
+                    <div class="dash-tile-label">Offers Sent</div>
+                    <div class="dash-tile-sub">Avg Days in Stage: 3.4</div>
+                </div>
+                <div class="dash-tile">
+                    <div class="dash-tile-value">8</div>
+                    <div class="dash-tile-label">Forward Starters</div>
+                    <div class="dash-tile-sub">YTD:54</div>
+                </div>
+        </div>
+
+        <div class="dash-charts">
+            <div>
+                <div class="dash-chart-title">Pipeline by Hiring Manager</div>
+                <div class="dash-chart-wrap">
+                    <canvas id="managerChart" role="img" aria-label="Horizontal bar chart of candidates per hiring manager across CV review, interview scheduled, and offer sent stages">Candidates per hiring manager across pipeline stages.</canvas>
+                </div>
+            </div>
+            <div>
+                <div class="dash-chart-title">Forward Starters by Month</div>
+                <div class="dash-chart-wrap">
+                    <canvas id="startersChart" role="img" aria-label="Bar chart of forward starters by month">Forward starters by month.</canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="service-outcome">Outcome: Visibility of the recruitment process, transparency across Management, Recruitment and Operations, ability to identify bottlnecks in the process.</p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+new Chart(document.getElementById('managerChart'), {
+    type: 'bar',
+    data: {
+        labels: ['Sarah Chen', 'Mark Douglas', 'Priya Patel', 'Tom Fraser', 'Emma Wallace'],
+        datasets: [
+            { label: 'CV Review', data: [14, 10, 8, 6, 5], backgroundColor: '#98c1d9', borderRadius: 3 },
+            { label: 'Interview Scheduled', data: [6, 7, 4, 5, 3], backgroundColor: '#3d5a80', borderRadius: 3 },
+            { label: 'Offer Sent', data: [2, 3, 2, 1, 1], backgroundColor: '#1a2b4a', borderRadius: 3 }
+        ]
+    },
+    options: {
+        indexAxis: 'y',
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { position: 'bottom', labels: { font: { size: 10 }, color: '#898781', boxWidth: 10 } } },
+        scales: {
+            x: { grid: { color: '#e1e0d9' }, ticks: { color: '#898781', font: { size: 11 } } },
+            y: { grid: { display: false }, ticks: { color: '#52514e', font: { size: 11 } } }
+        }
+    }
+});
+
+new Chart(document.getElementById('startersChart'), {
+    type: 'bar',
+    data: {
+        labels: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+        datasets: [{ label: 'Forward starters', data: [4,3,5,6,4,7,5,6,9,7,5,3], backgroundColor: '#3d5a80', borderRadius: 3 }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+            x: { grid: { display: false }, ticks: { color: '#898781', font: { size: 11 } } },
+            y: { grid: { color: '#e1e0d9' }, ticks: { color: '#898781', font: { size: 11 } } }
+        }
+    }
+});
+</script>
+    
+
         <!-- Section for contact form -->
         <div class="contact-section">
             <h3> Let's talk </h3>
