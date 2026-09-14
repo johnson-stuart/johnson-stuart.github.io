@@ -1,44 +1,6 @@
-.navbar .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
 body {
   margin: auto;
   padding: 0;
-}
-
-.navbar {
-  overflow: hidden;
-}
-
-.nav-links {
-  width:1000px;
-  margin:auto;
-  list-style-type: none;  
-  padding: 0;
-  overflow: hidden;
-  background-color: #912828;
-}
-
-.nav-links li {
-  float: left;
-}
-
-.nav-links li a{
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.nav-links li a:hover {
-  background-color: #691010;
-}
-
-.nav-links .active {
-  background-color: #370909;
 }
 
 .profile-image {
@@ -46,21 +8,31 @@ body {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  margin-top: 50px
+  margin-top: 50px;
 }
 
 .about-section {
-  width:1000px;
-  margin:auto;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
   text-align: center;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .download-btn {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: #0b0b0b;
-    color: #fcfcfb;
+    background: transparent;
+    color: #0b0b0b;
+    border: 0.5px solid #c3c2b7;
     padding: 10px 20px;
     border-radius: 8px;
     text-decoration: none;
@@ -69,13 +41,31 @@ body {
 }
 
 .download-btn:hover {
+    background: #f1efe8;
+}
+
+.schedule-btn-hero {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #0e7490;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.schedule-btn-hero:hover {
     opacity: 0.9;
 }
 
 .service-section {
-    max-width: 640px;
+    max-width: 700px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 20px 20px;
 }
 
 .service-eyebrow {
@@ -114,7 +104,7 @@ body {
 }
 
 .service-preview-grid {
-    max-width: 640px;
+    max-width: 700px;
     margin: 0 auto 4rem;
     padding: 0 20px;
     display: grid;
@@ -176,7 +166,6 @@ body {
     }
 }
 
-
 .dash-charts-single {
     padding: 20px 20px 8px;
 }
@@ -225,7 +214,7 @@ body {
 
 .dash-title-bar {
     padding: 16px 20px;
-    border-bottom: 4px solid #98c1d9;
+    border-bottom: 4px solid #0e7490;
 }
 
 .dash-title {
@@ -251,7 +240,7 @@ body {
 .dash-tile-value {
     font-size: 26px;
     font-weight: 600;
-    color: #0b0b0b;
+    color: #0e7490;
 }
 
 .dash-tile-label {
@@ -287,8 +276,6 @@ body {
     height: 240px;
 }
 
-
-/* Mobile: stack tiles and charts */
 @media (max-width: 700px) {
     .dash-tiles {
         grid-template-columns: repeat(2, 1fr);
@@ -299,12 +286,12 @@ body {
 }
 
 .contact-section {
-   max-width: 480px;
+    max-width: 640px;
     padding: 24px;
     border: 0.5px solid #e1e0d9;
     border-radius: 12px;
     background: #fcfcfb;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .contact-section h3 {
@@ -352,31 +339,32 @@ body {
 
 .contact-form input[type="submit"] {
     margin-top: 16px;
-    background: #0b0b0b;
-    color: #fcfcfb;
-    border: none;
+    background: transparent;
+    color: #52514e;
+    border: 0.5px solid #c3c2b7;
     border-radius: 8px;
-    padding: 10px;
-    font-size: 14px;
+    padding: 9px;
+    font-size: 13px;
     font-weight: 500;
     cursor: pointer;
 }
 
 .contact-form input[type="submit"]:hover {
-    opacity: 0.9;
+    background: #f1efe8;
+    color: #0b0b0b;
 }
 
 .schedule-btn {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: #3d72af;
+    background: #0e7490;
     color: #ffffff;
     border: none;
-    padding: 12px 24px;
+    padding: 14px 24px;
     border-radius: 8px;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 600;
     cursor: pointer;
     width: 100%;
     justify-content: center;
@@ -407,13 +395,15 @@ body {
 }
 
 .social-media-section {
-  width:1000px;
-  margin:auto;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
   text-align: center;
 }
 
 .footer {
-  width:1000px;
-  margin:auto;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
   text-align: center;
 }

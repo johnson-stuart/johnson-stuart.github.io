@@ -9,40 +9,25 @@
         <meta content="johnson-stuart.github.io" property="og:url"/>
         <title>Stuart Johnson</title>
         <link rel="stylesheet" href="styles.css">
-         <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     </head>
 
-    <!-- Navigation bar at the top of page-->
     <body>
-        <!--
-        <nav class="navbar" id="navbar">
-                <ul class="nav-links">
-                    <li><a href="index.html" class="active">Stuart Johnson</a></li>
-                    <li><a href="project_section.html">Projects</a></li>
-                    <li><a href="consulting.html">Consulting</a></li>
-                    <li><a href="blog_section.html">Blog</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                </ul>   
-        </nav> 
-        -->
 
-        <!-- Section for short description about me and a link to CV -->
+        <!-- Section for short description about me, CV, and schedule button -->
         <div class="about-section">
             <img src="images/profilephoto.jpg" alt="Profile photo" width="150" class="profile-image"/>
             <h3> Stuart Johnson </h3>
-            <p> Helping businesses turn data into decisions - dashboards, analysis, forecasting.</p>    
-            
-            <div class="resume-section">
-                <!--Button or link to download Resume-->
-                <p>
-                            <a href="files/Stuart_Johnson_CV.pdf" download  class="download-btn" target="_blank">
-                            <i class="fa fa-download" aria-hidden="true"></i>CV</a>
-                </p>
-            </div>
+            <p> Helping businesses turn data into decisions - dashboards, analysis, forecasting.</p>
 
+            <div class="hero-actions">
+                <a href="files/Stuart_Johnson_CV.pdf" download class="download-btn" target="_blank">
+                    <i class="fa fa-download" aria-hidden="true"></i>Download CV
+                </a>
+            </div>
         </div>
 
+        <!--
         <div class="service-preview-grid">
             <a href="#dashboards" class="service-preview-card">
                 <div class="service-preview-icon"><i class="fa-solid fa-chart-column"></i></div>
@@ -63,9 +48,10 @@
                 <p class="service-preview-sub">Greatly reduce time spent manually running reports.</p>
             </a>
         </div>
+        -->
 
-        <!--Dashboard section -->
-        <div class="service-section">
+        <!-- Dashboard section -->
+        <div class="service-section" id="dashboards">
             <div class="service-eyebrow">01 · Dashboard Development</div>
             <h2 class="service-heading">Business ready dashboards in weeks, turning your data into meaningful dashboards or reports</h2>
 
@@ -74,173 +60,176 @@
                     <div class="dash-title">Recruitment — Open Roles</div>
                 </div>
 
-            <div class="dash-tiles">
-                <div class="dash-tile">
-                    <div class="dash-tile-value">42</div>
-                    <div class="dash-tile-label">Open requisitions</div>
+                <div class="dash-tiles">
+                    <div class="dash-tile">
+                        <div class="dash-tile-value">42</div>
+                        <div class="dash-tile-label">Open requisitions</div>
+                    </div>
+                    <div class="dash-tile">
+                        <div class="dash-tile-value">17</div>
+                        <div class="dash-tile-label">Vacancies Remaining</div>
+                    </div>
+                    <div class="dash-tile">
+                        <div class="dash-tile-value">63</div>
+                        <div class="dash-tile-label">CV Review</div>
+                        <div class="dash-tile-sub">Avg Days in Stage: 4.2</div>
+                    </div>
+                    <div class="dash-tile">
+                        <div class="dash-tile-value">29</div>
+                        <div class="dash-tile-label">Interviews Scheduled</div>
+                        <div class="dash-tile-sub">Avg Days in Stage: 6.1</div>
+                    </div>
+                    <div class="dash-tile">
+                        <div class="dash-tile-value">11</div>
+                        <div class="dash-tile-label">Offers Sent</div>
+                        <div class="dash-tile-sub">Avg Days in Stage: 3.4</div>
+                    </div>
+                    <div class="dash-tile">
+                        <div class="dash-tile-value">8</div>
+                        <div class="dash-tile-label">Forward Starters</div>
+                        <div class="dash-tile-sub">YTD:54</div>
+                    </div>
                 </div>
-                <div class="dash-tile">
-                    <div class="dash-tile-value">17</div>
-                    <div class="dash-tile-label">Vacancies Remaining</div>
-                </div>
-                <div class="dash-tile">
-                    <div class="dash-tile-value">63</div>
-                    <div class="dash-tile-label">CV Review</div>
-                    <div class="dash-tile-sub">Avg Days in Stage: 4.2</div>
-                </div>
-                <div class="dash-tile">
-                    <div class="dash-tile-value">29</div>
-                    <div class="dash-tile-label">Interviews Scheduled</div>
-                    <div class="dash-tile-sub">Avg Days in Stage: 6.1</div>
-                </div>
-                <div class="dash-tile">
-                    <div class="dash-tile-value">11</div>
-                    <div class="dash-tile-label">Offers Sent</div>
-                    <div class="dash-tile-sub">Avg Days in Stage: 3.4</div>
-                </div>
-                <div class="dash-tile">
-                    <div class="dash-tile-value">8</div>
-                    <div class="dash-tile-label">Forward Starters</div>
-                    <div class="dash-tile-sub">YTD:54</div>
-                </div>
-        </div>
 
-        <div class="dash-charts">
-            <div>
-                <div class="dash-chart-title">Pipeline by Hiring Manager</div>
-                <div class="dash-chart-wrap">
-                    <canvas id="managerChart" role="img" aria-label="Horizontal bar chart of candidates per hiring manager across CV review, interview scheduled, and offer sent stages">Candidates per hiring manager across pipeline stages.</canvas>
+                <div class="dash-charts">
+                    <div>
+                        <div class="dash-chart-title">Pipeline by Hiring Manager</div>
+                        <div class="dash-chart-wrap">
+                            <canvas id="managerChart" role="img" aria-label="Horizontal bar chart of candidates per hiring manager across CV review, interview scheduled, and offer sent stages">Candidates per hiring manager across pipeline stages.</canvas>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dash-chart-title">Forward Starters by Month</div>
+                        <div class="dash-chart-wrap">
+                            <canvas id="startersChart" role="img" aria-label="Bar chart of forward starters by month">Forward starters by month.</canvas>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div>
-                <div class="dash-chart-title">Forward Starters by Month</div>
-                <div class="dash-chart-wrap">
-                    <canvas id="startersChart" role="img" aria-label="Bar chart of forward starters by month">Forward starters by month.</canvas>
+
+            <p class="service-outcome">Outcome: Visibility of the recruitment process, transparency across Management, Recruitment and Operations, ability to identify bottlenecks in the process.</p>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+        <script>
+        new Chart(document.getElementById('managerChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Sarah Chen', 'Mark Douglas', 'Priya Patel', 'Tom Fraser', 'Emma Wallace'],
+                datasets: [
+                    { label: 'CV Review', data: [14, 10, 8, 6, 5], backgroundColor: '#0e7490', borderRadius: 3 },
+                    { label: 'Interview Scheduled', data: [6, 7, 4, 5, 3], backgroundColor: '#22d3ee', borderRadius: 3 },
+                    { label: 'Offer Sent', data: [2, 3, 2, 1, 1], backgroundColor: '#a5f3fc', borderRadius: 3 }
+                ]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { position: 'bottom', labels: { font: { size: 10 }, color: '#898781', boxWidth: 10 } } },
+                scales: {
+                    x: { grid: { color: '#e1e0d9' }, ticks: { color: '#898781', font: { size: 11 } } },
+                    y: { grid: { display: false }, ticks: { color: '#52514e', font: { size: 11 } } }
+                }
+            }
+        });
+
+        new Chart(document.getElementById('startersChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+                datasets: [{ label: 'Forward starters', data: [4,3,5,6,4,7,5,6,9,7,5,3], backgroundColor: '#0e7490', borderRadius: 3 }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    x: { grid: { display: false }, ticks: { color: '#898781', font: { size: 11 } } },
+                    y: { grid: { color: '#e1e0d9' }, ticks: { color: '#898781', font: { size: 11 } } }
+                }
+            }
+        });
+        </script>
+
+        <!-- Analysis section -->
+        <div class="service-section" id="analysis">
+            <div class="service-eyebrow">02 · Analysis</div>
+            <h2 class="service-heading">Explaining why the numbers moved, not just that they did</h2>
+            <div class="dashboard-frame">
+                <div class="dash-title-bar">
+                    <div class="dash-title">Supply Forecast</div>
+                </div>
+                <div class="dash-charts-single">
+                    <div class="chart-legend">
+                        <span><span class="legend-dot" style="background:#0e7490;"></span>Surplus</span>
+                        <span><span class="legend-line" style="background:#0e7490;"></span>Efficiency %</span>
+                    </div>
+                    <div class="dash-chart-wrap-tall">
+                        <canvas id="anomalyUtilChart" role="img" aria-label="Stacked bar chart of weekly surplus, mostly small except one week highlighted in red showing a large spike, with an overlaid line showing efficiency dropping sharply the same week">Weekly surplus is small and steady across most weeks, with one week highlighted in red showing a much larger spike. Efficiency drops sharply that same week before recovering.</canvas>
+                    </div>
                 </div>
             </div>
+
+            <p class="service-outcome">Outcome: caught the drop before it reached the monthly report — the same pattern applies wherever supply or capacity can drift quietly, from workforce planning to inventory.</p>
         </div>
-    </div>
 
-    <p class="service-outcome">Outcome: Visibility of the recruitment process, transparency across Management, Recruitment and Operations, ability to identify bottlnecks in the process.</p>
-</div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+        <script>
+        const weeksU2 = ['W1','W2','W3','W4','W5','W6','W7','W8','W9','W10','W11','W12'];
+        const spikeIdx = 6;
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
-<script>
-new Chart(document.getElementById('managerChart'), {
-    type: 'bar',
-    data: {
-        labels: ['Sarah Chen', 'Mark Douglas', 'Priya Patel', 'Tom Fraser', 'Emma Wallace'],
-        datasets: [
-            { label: 'CV Review', data: [14, 10, 8, 6, 5], backgroundColor: '#98c1d9', borderRadius: 3 },
-            { label: 'Interview Scheduled', data: [6, 7, 4, 5, 3], backgroundColor: '#3d5a80', borderRadius: 3 },
-            { label: 'Offer Sent', data: [2, 3, 2, 1, 1], backgroundColor: '#1a2b4a', borderRadius: 3 }
-        ]
-    },
-    options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: { legend: { position: 'bottom', labels: { font: { size: 10 }, color: '#898781', boxWidth: 10 } } },
-        scales: {
-            x: { grid: { color: '#e1e0d9' }, ticks: { color: '#898781', font: { size: 11 } } },
-            y: { grid: { display: false }, ticks: { color: '#52514e', font: { size: 11 } } }
-        }
-    }
-});
+        const surplusU = [2,1,2,1,2,1,13,2,1,2,1,2];
+        const efficiencyU2 = [89, 90, 88, 89, 91, 90, 85, 86, 87, 87, 89, 90];
 
-new Chart(document.getElementById('startersChart'), {
-    type: 'bar',
-    data: {
-        labels: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
-        datasets: [{ label: 'Forward starters', data: [4,3,5,6,4,7,5,6,9,7,5,3], backgroundColor: '#3d5a80', borderRadius: 3 }]
-    },
-    options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: { legend: { display: false } },
-        scales: {
-            x: { grid: { display: false }, ticks: { color: '#898781', font: { size: 11 } } },
-            y: { grid: { color: '#e1e0d9' }, ticks: { color: '#898781', font: { size: 11 } } }
-        }
-    }
-});
-</script>
-    
+        const surplusColors = surplusU.map((v, i) => i === spikeIdx ? '#dc2626' : '#0e7490');
+        const linePointColors2 = efficiencyU2.map((v, i) => i === spikeIdx ? '#dc2626' : '#0e7490');
+        const linePointRadii2 = efficiencyU2.map((v, i) => i === spikeIdx ? 6 : 3);
 
-<div class="dashboard-frame">
-    <div class="dash-title-bar">
-        <div class="dash-title">Supply Forecast</div>
-    </div>
-    <div class="dash-charts-single">
-        <div class="chart-legend">
-            <span><span class="legend-dot" style="background:#0e7490;"></span>Surplus</span>
-            <span><span class="legend-line" style="background:#0e7490;"></span>Efficiency %</span>
-        </div>
-        <div class="dash-chart-wrap-tall">
-            <canvas id="anomalyUtilChart" role="img" aria-label="Stacked bar chart of weekly employee availability, mostly small except one week highlighted in red showing a large spike, with an overlaid line showing utilisation dropping sharply the same week">Weekly availability is small and steady across most weeks, with one week highlighted in red showing a much larger spike. Utilisation drops sharply that same week before recovering.</canvas>
-        </div>
-    </div>
-</div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
-<script>
-const weeksU2 = ['W1','W2','W3','W4','W5','W6','W7','W8','W9','W10','W11','W12'];
-const spikeIdx = 6;
-
-const expectedU = [2,1,2,1,2,1,13,2,1,2,1,2];
-const extensionU = [1,2,1,2,1,2,0,1,2,1,2,1];
-const newHireU = [0,1,1,0,1,0,0,0,1,0,1,0];
-const utilisationU2 = [89, 90, 88, 89, 91, 90, 74, 79, 84, 87, 89, 90];
-
-const expectedColors = expectedU.map((v, i) => i === spikeIdx ? '#dc2626' : '#0e7490');
-const linePointColors2 = utilisationU2.map((v, i) => i === spikeIdx ? '#dc2626' : '#0e7490');
-const linePointRadii2 = utilisationU2.map((v, i) => i === spikeIdx ? 6 : 3);
-
-new Chart(document.getElementById('anomalyUtilChart'), {
-    data: {
-        labels: weeksU2,
-        datasets: [
-            { type: 'bar', label: 'Surplus', data: expectedU, backgroundColor: expectedColors, stack: 's', borderRadius: 3, yAxisID: 'y' },
-            { type: 'line', label: 'Efficiency %', data: utilisationU2, borderColor: '#0e7490', backgroundColor: '#0e7490', borderWidth: 2, pointRadius: linePointRadii2, pointBackgroundColor: linePointColors2, pointBorderColor: linePointColors2, tension: 0.3, yAxisID: 'y1' }
-        ]
-    },
-    options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: { legend: { display: false } },
-        scales: {
-            x: { stacked: true, grid: { display: false }, ticks: { color: '#898781', font: { size: 11 } } },
-            y: { stacked: true, min: 0, max: 18, title: { display: true, text: 'Surplus', color: '#898781', font: { size: 11 } }, grid: { color: '#e1e0d9' }, ticks: { color: '#898781', font: { size: 11 } } },
-            y1: { position: 'right', min: 60, max: 95, title: { display: true, text: 'Efficiency %', color: '#898781', font: { size: 11 } }, grid: { display: false }, ticks: { color: '#898781', font: { size: 11 }, callback: (v) => v + '%' } }
-        }
-    }
-});
-</script>
+        new Chart(document.getElementById('anomalyUtilChart'), {
+            data: {
+                labels: weeksU2,
+                datasets: [
+                    { type: 'bar', label: 'Surplus', data: surplusU, backgroundColor: surplusColors, borderRadius: 3, yAxisID: 'y' },
+                    { type: 'line', label: 'Efficiency %', data: efficiencyU2, borderColor: '#0e7490', backgroundColor: '#0e7490', borderWidth: 2, pointRadius: linePointRadii2, pointBackgroundColor: linePointColors2, pointBorderColor: linePointColors2, tension: 0.3, yAxisID: 'y1' }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    x: { grid: { display: false }, ticks: { color: '#898781', font: { size: 11 } } },
+                    y: { min: 0, max: 22, title: { display: true, text: 'Surplus', color: '#898781', font: { size: 11 } }, grid: { color: '#e1e0d9' }, ticks: { color: '#898781', font: { size: 11 } } },
+                    y1: { position: 'right', min: 55, max: 92, title: { display: true, text: 'Efficiency %', color: '#898781', font: { size: 11 } }, grid: { display: false }, ticks: { color: '#898781', font: { size: 11 }, callback: (v) => v + '%' } }
+                }
+            }
+        });
+        </script>
 
         <!-- Section for contact form -->
-        <div class="contact-section">
+        <div class="contact-section" id="contact">
             <h3> Let's chat </h3>
             <p class="contact-sub">Happy to talk and find out how I can help.</p>
 
             <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/johnso-stuart/initial-consultation'});return false;" class="schedule-btn">
-            <i class="fa-solid fa-calendar"></i> Schedule a consultation
+                <i class="fa-solid fa-calendar"></i> Schedule a consultation
             </button>
 
             <div class="or-divider"><span>or send a message</span></div>
 
-                <form action="https://formspree.io/f/mrbnlvad" method="post" class="contact-form">
-                    <input type="text" id="name" name="name" placeholder="Name">
-                    <input required type="email" id="email" name="email" placeholder="Email">
-                    <textarea id="message" name="message" rows="4" placeholder="Message"></textarea>
-                    <input type="submit" value="Submit">
-                </form>
+            <form action="https://formspree.io/f/mrbnlvad" method="post" class="contact-form">
+                <input type="text" id="name" name="name" placeholder="Name">
+                <input required type="email" id="email" name="email" placeholder="Email">
+                <textarea id="message" name="message" rows="4" placeholder="Message"></textarea>
+                <input type="submit" value="Submit">
+            </form>
         </div>
 
-        <!-- Section for Social Media links-->
+        <!-- Section for Social Media links -->
         <div class="social-media-section">
-                <p><a href="https://www.linkedin.com/in/johnson-stuart/"   target="_blank"><i class="fa-brands fa-linkedin fa-2x" aria-hidden="true"></i></a></p>
+            <p><a href="https://www.linkedin.com/in/johnson-stuart/" target="_blank"><i class="fa-brands fa-linkedin fa-2x" aria-hidden="true"></i></a></p>
         </div>
-
 
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
         <script src="https://assets.calendly.com/assets/external/widget.js"></script>
