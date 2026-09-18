@@ -14,7 +14,7 @@ body {
 .about-section {
   max-width: 700px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 40px 20px;
   text-align: center;
 }
 
@@ -44,24 +44,22 @@ body {
     background: #f1efe8;
 }
 
-.schedule-btn-hero {
+.btn-getintouch {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: #0e7490;
+    background: #da4113;
     color: #ffffff;
-    border: none;
     padding: 10px 20px;
     border-radius: 8px;
+    text-decoration: none;
     font-size: 14px;
     font-weight: 500;
-    cursor: pointer;
 }
 
-.schedule-btn-hero:hover {
+.btn-getintouch:hover {
     opacity: 0.9;
 }
-
 .service-section {
     max-width: 700px;
     margin: 0 auto;
@@ -78,21 +76,8 @@ body {
 
 .service-heading {
     margin: 0 0 24px;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 500;
-    color: #0b0b0b;
-}
-
-.service-process {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 32px;
-    font-size: 14px;
-    color: #52514e;
-}
-
-.service-process strong {
     color: #0b0b0b;
 }
 
@@ -131,14 +116,14 @@ body {
     justify-content: center;
     margin-bottom: 14px;
     font-size: 16px;
-    color: #085041;
+    color: #1c1917;
 }
 
 .service-preview-num {
     font-size: 12px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    color: #0e7490;
+    color: #1c1917;
     font-weight: 500;
     margin: 0 0 6px;
 }
@@ -147,7 +132,7 @@ body {
     font-size: 15px;
     font-weight: 500;
     margin: 0 0 6px;
-    color: #0b0b0b;
+    color: #57534e;
 }
 
 .service-preview-sub {
@@ -214,13 +199,13 @@ body {
 
 .dash-title-bar {
     padding: 16px 20px;
-    border-bottom: 4px solid #0e7490;
+    border-bottom: 4px solid #57534e;
 }
 
 .dash-title {
     font-size: 16px;
     font-weight: 600;
-    color: #0b0b0b;
+    color: #57534e;
 }
 
 .dash-tiles {
@@ -240,7 +225,7 @@ body {
 .dash-tile-value {
     font-size: 26px;
     font-weight: 600;
-    color: #0e7490;
+    color: #1b1c1d;
 }
 
 .dash-tile-label {
@@ -358,7 +343,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: #0e7490;
+    background: #da4113;
     color: #ffffff;
     border: none;
     padding: 14px 24px;

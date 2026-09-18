@@ -18,9 +18,10 @@
         <div class="about-section">
             <img src="images/profilephoto.jpg" alt="Profile photo" width="150" class="profile-image"/>
             <h3> Stuart Johnson </h3>
-            <p> Helping businesses turn data into decisions - dashboards, analysis, forecasting.</p>
+            <p> Helping businesses turn data into decisions - dashboards, analysis and automation.</p>
 
             <div class="hero-actions">
+                <a href="#contact" class="btn-getintouch">Get in touch</a>
                 <a href="files/Stuart_Johnson_CV.pdf" download class="download-btn" target="_blank">
                     <i class="fa fa-download" aria-hidden="true"></i>Download CV
                 </a>
@@ -53,8 +54,10 @@
         <!-- Dashboard section -->
         <div class="service-section" id="dashboards">
             <div class="service-eyebrow">01 · Dashboard Development</div>
-            <h2 class="service-heading">Business ready dashboards in weeks, turning your data into meaningful dashboards or reports</h2>
-
+            <h2 class="service-heading">Dashboards that answer questions, instead of creating more questions</h2>
+            <div> 
+                <p>End-to-end — from the underlying data model and KPI definitions through to security, performance, and adoption across the business. Power BI, Tableau, Oracle Analytics, Excel</p>
+            </div>
             <div class="dashboard-frame">
                 <div class="dash-title-bar">
                     <div class="dash-title">Recruitment — Open Roles</div>
@@ -107,7 +110,7 @@
                 </div>
             </div>
 
-            <p class="service-outcome">Outcome: Visibility of the recruitment process, transparency across Management, Recruitment and Operations, ability to identify bottlenecks in the process.</p>
+            <p class="service-outcome"> I created this to help our division monitor recruitment activity. VP's, Hiring Managers, Operations and Recruitment share one coherent view, and use this to drive discussions around recruitment.</p>
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
@@ -117,16 +120,16 @@
             data: {
                 labels: ['Sarah Chen', 'Mark Douglas', 'Priya Patel', 'Tom Fraser', 'Emma Wallace'],
                 datasets: [
-                    { label: 'CV Review', data: [14, 10, 8, 6, 5], backgroundColor: '#0e7490', borderRadius: 3 },
-                    { label: 'Interview Scheduled', data: [6, 7, 4, 5, 3], backgroundColor: '#22d3ee', borderRadius: 3 },
-                    { label: 'Offer Sent', data: [2, 3, 2, 1, 1], backgroundColor: '#a5f3fc', borderRadius: 3 }
+                    { label: 'CV Review', data: [14, 10, 8, 6, 5], backgroundColor: '#93c5fd', borderRadius: 3 },
+                    { label: 'Interview Scheduled', data: [6, 7, 4, 5, 3], backgroundColor: '#3b82f6', borderRadius: 3 },
+                    { label: 'Offer Sent', data: [2, 3, 2, 1, 1], backgroundColor: '#1e3a8a', borderRadius: 3 }
                 ]
             },
             options: {
                 indexAxis: 'y',
                 responsive: true,
                 maintainAspectRatio: false,
-                plugins: { legend: { position: 'bottom', labels: { font: { size: 10 }, color: '#898781', boxWidth: 10 } } },
+                plugins: { legend: { position: 'bottom', labels: { font: { size: 10 }, color: '#1e3a8a', boxWidth: 10 } } },
                 scales: {
                     x: { grid: { color: '#e1e0d9' }, ticks: { color: '#898781', font: { size: 11 } } },
                     y: { grid: { display: false }, ticks: { color: '#52514e', font: { size: 11 } } }
@@ -138,7 +141,7 @@
             type: 'bar',
             data: {
                 labels: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
-                datasets: [{ label: 'Forward starters', data: [4,3,5,6,4,7,5,6,9,7,5,3], backgroundColor: '#0e7490', borderRadius: 3 }]
+                datasets: [{ label: 'Forward starters', data: [4,3,5,6,4,7,5,6,9,7,5,3], backgroundColor: '#1e3a8a', borderRadius: 3 }]
             },
             options: {
                 responsive: true,
@@ -155,15 +158,15 @@
         <!-- Analysis section -->
         <div class="service-section" id="analysis">
             <div class="service-eyebrow">02 · Analysis</div>
-            <h2 class="service-heading">Explaining why the numbers moved, not just that they did</h2>
+            <h2 class="service-heading">Detect anomalies and understand what's driving changes in your metrics</h2>
             <div class="dashboard-frame">
                 <div class="dash-title-bar">
                     <div class="dash-title">Supply Forecast</div>
                 </div>
                 <div class="dash-charts-single">
                     <div class="chart-legend">
-                        <span><span class="legend-dot" style="background:#0e7490;"></span>Surplus</span>
-                        <span><span class="legend-line" style="background:#0e7490;"></span>Efficiency %</span>
+                        <span><span class="legend-dot" style="background:#e7e4e4;"></span>Surplus</span>
+                        <span><span class="legend-line" style="background:#57534e"></span>Efficiency %</span>
                     </div>
                     <div class="dash-chart-wrap-tall">
                         <canvas id="anomalyUtilChart" role="img" aria-label="Stacked bar chart of weekly surplus, mostly small except one week highlighted in red showing a large spike, with an overlaid line showing efficiency dropping sharply the same week">Weekly surplus is small and steady across most weeks, with one week highlighted in red showing a much larger spike. Efficiency drops sharply that same week before recovering.</canvas>
@@ -171,7 +174,7 @@
                 </div>
             </div>
 
-            <p class="service-outcome">Outcome: caught the drop before it reached the monthly report — the same pattern applies wherever supply or capacity can drift quietly, from workforce planning to inventory.</p>
+            <p class="service-outcome">Spot outliers weeks or months in advance and drill down into exactly what is driving the changes.</p>
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
@@ -182,8 +185,8 @@
         const surplusU = [2,1,2,1,2,1,13,2,1,2,1,2];
         const efficiencyU2 = [89, 90, 88, 89, 91, 90, 85, 86, 87, 87, 89, 90];
 
-        const surplusColors = surplusU.map((v, i) => i === spikeIdx ? '#dc2626' : '#0e7490');
-        const linePointColors2 = efficiencyU2.map((v, i) => i === spikeIdx ? '#dc2626' : '#0e7490');
+        const surplusColors = surplusU.map((v, i) => i === spikeIdx ? '#dc2626' : '#e7e5e4');
+        const linePointColors2 = efficiencyU2.map((v, i) => i === spikeIdx ? '#dc2626' : '#57534e');
         const linePointRadii2 = efficiencyU2.map((v, i) => i === spikeIdx ? 6 : 3);
 
         new Chart(document.getElementById('anomalyUtilChart'), {
@@ -191,7 +194,7 @@
                 labels: weeksU2,
                 datasets: [
                     { type: 'bar', label: 'Surplus', data: surplusU, backgroundColor: surplusColors, borderRadius: 3, yAxisID: 'y' },
-                    { type: 'line', label: 'Efficiency %', data: efficiencyU2, borderColor: '#0e7490', backgroundColor: '#0e7490', borderWidth: 2, pointRadius: linePointRadii2, pointBackgroundColor: linePointColors2, pointBorderColor: linePointColors2, tension: 0.3, yAxisID: 'y1' }
+                    { type: 'line', label: 'Efficiency %', data: efficiencyU2, borderColor: '#57534e', backgroundColor: '#0e7490', borderWidth: 2, pointRadius: linePointRadii2, pointBackgroundColor: linePointColors2, pointBorderColor: linePointColors2, tension: 0.3, yAxisID: 'y1' }
                 ]
             },
             options: {
